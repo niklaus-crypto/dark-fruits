@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop & DC — DARK FRUITS</title>
+  <meta name="description" content="Dark Fruits shop, DC economy and daily quests.">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+
+<header class="top">
+  <a href="index.html" class="brand">
+    <img src="dark-fruits-logo.gif" alt="Dark Fruits" width="32" height="32">
+    DARK FRUITS
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="trading.html">Trading</a>
+    <a href="events.html">Events</a>
+    <a href="giveaways.html">Giveaways</a>
+    <a href="values.html">Values</a>
+    <a href="shop.html" class="active">Shop</a>
+    <a href="clans.html">Clans</a>
+    <a href="staff.html">Staff</a>
+    <a href="rules.html">Rules</a>
+    <a href="https://discord.gg/jNrBh8EbQ" class="nav-cta" target="_blank" rel="noopener">Join</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+</header>
+<nav class="drawer" id="drawer">
+  <a href="index.html">Home</a>
+  <a href="trading.html">Trading</a>
+  <a href="events.html">Events</a>
+  <a href="giveaways.html">Giveaways</a>
+  <a href="values.html">Values</a>
+  <a href="shop.html">Shop & DC</a>
+  <a href="clans.html">Clans</a>
+  <a href="staff.html">Staff</a>
+  <a href="rules.html">Rules</a>
+  <a href="https://discord.gg/jNrBh8EbQ" target="_blank" rel="noopener">Join Discord</a>
+</nav>
+<main class="page">
+  <div class="page-head reveal"><div class="kicker">Economy</div><h1>Shop & Dark Coins</h1>
+  <p>Earn DC from daily quests and activity. Spend it in the store on tickets, roles and rolls.</p></div>
+  <div class="bento reveal" style="margin-bottom:1.5rem">
+    <div class="tile"><div class="icon">📜</div><h3>Daily quests</h3><p>Complete daily quests to earn DC every day and keep progressing.</p></div>
+    <div class="tile"><div class="icon">📈</div><h3>Chat ranks</h3><p>Every 5 chat levels you rank up. At level 30 you become Diamond Chatter.</p></div>
+  </div>
+  <div class="page-head reveal"><div class="kicker">Store</div><h1>What you can buy</h1>
+  <p>Open the store in Discord with the bot or /buy. Prices in DC (keys).</p></div>
+  <div class="shop-grid reveal">
+    <div class="shop-item"><div class="price">100 DC</div><div><h3>⚔️ Tournament ticket</h3><p>PvP challenge ticket. Can earn 5000 DC + tournament winner role (800 DC/day). Expires in a week.</p></div></div>
+    <div class="shop-item"><div class="price">1,000 DC</div><div><h3>🎟️ Giveaway entry</h3><p>Extra giveaway entry for future giveaways.</p></div></div>
+    <div class="shop-item"><div class="price">5,000 DC</div><div><h3>🎰 Fruit roll</h3><p>Free fruit roll — open a support ticket to claim.</p></div></div>
+    <div class="shop-item"><div class="price">10,000 DC</div><div><h3>😈 Dark supporter role</h3><p>Earns 250 DC per day. Member role.</p></div></div>
+    <div class="shop-item"><div class="price">25,000 DC</div><div><h3>👑 Dark VIP role</h3><p>Royalty rank in the server.</p></div></div>
+    <div class="shop-item"><div class="price">50,000 DC</div><div><h3>🐉 Random Mythical fruit</h3><p>Random mythical fruit — open a support ticket to claim.</p></div></div>
+  </div>
+  <div class="page-head reveal" style="margin-top:2rem"><div class="kicker">Ranks</div><h1>Chat leveling path</h1></div>
+  <div class="ranks reveal">
+    <div class="rank"><strong>Every 5 levels</strong><span>Rank up</span></div>
+    <div class="rank"><strong>Level 30 — Diamond Chatter</strong><span>Unlocks Diamond Chatter + booster-style trading perks</span></div>
+    <div class="rank"><strong>Boosters & Diamond Chatter</strong><span>Extra giveaway entries</span></div>
+  </div>
+  <div class="cta-band reveal"><h2>Start earning DC</h2><p>Join Discord, do daily quests, then open the store.</p>
+  <a href="https://discord.gg/jNrBh8EbQ" class="btn btn-main" target="_blank" rel="noopener">Join Discord</a></div>
+</main>
+<footer>
+  <strong>DARK FRUITS</strong>
+  <div class="foot-links">
+    <a href="index.html">Home</a>
+    <a href="trading.html">Trading</a>
+    <a href="shop.html">Shop</a>
+    <a href="clans.html">Clans</a>
+    <a href="https://discord.gg/jNrBh8EbQ" target="_blank" rel="noopener">Discord</a>
+  </div>
+  <p>Unofficial fan community. Not affiliated with Roblox or Blox Fruits developers.</p>
+  <p>© <span id="year"></span> Dark Fruits</p>
+</footer>
+<script src="app.js"></script>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Values — DARK FRUITS</title>
+  <meta name="description" content="Trade values and stock info for Dark Fruits community.">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<header class="top">
+  <a href="index.html" class="brand">
+    <img src="dark-fruits-logo.gif" alt="Dark Fruits" width="32" height="32">
+    DARK FRUITS
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="trading.html">Trading</a>
+    <a href="events.html">Events</a>
+    <a href="giveaways.html">Giveaways</a>
+    <a href="values.html" class="active">Values</a>
+    <a href="shop.html">Shop</a>
+    <a href="clans.html">Clans</a>
+    <a href="staff.html">Staff</a>
+    <a href="rules.html">Rules</a>
+    <a href="https://discord.gg/jNrBh8EbQ" class="nav-cta" target="_blank" rel="noopener">Join</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+</header>
+<nav class="drawer" id="drawer">
+  <a href="index.html">Home</a>
+  <a href="trading.html">Trading</a>
+  <a href="events.html">Events</a>
+  <a href="giveaways.html">Giveaways</a>
+  <a href="values.html" class="active">Values</a>
+  <a href="shop.html">Shop & DC</a>
+  <a href="clans.html">Clans</a>
+  <a href="staff.html">Staff</a>
+  <a href="rules.html">Rules</a>
+  <a href="https://discord.gg/jNrBh8EbQ" target="_blank" rel="noopener">Join Discord</a>
+</nav>
+<main class="page">
+  <div class="page-head reveal">
+    <div class="kicker">Values</div>
+    <h1>Trade values & stock</h1>
+    <p>Use Discord trading channels for live offers. Value talk stays inside the crew.</p>
+  </div>
+  <div class="bento reveal">
+    <div class="tile"><div class="icon">🍇</div><h3>Mythicals</h3><p>Dragon, Kitsune, Control, Dough, and other top fruits — ask in trading for current deals.</p></div>
+    <div class="tile"><div class="icon">💎</div><h3>Permanents</h3><p>Perms trade higher. Confirm with experienced traders in the server before you lock a deal.</p></div>
+    <div class="tile"><div class="icon">✨</div><h3>Mutations</h3><p>Limited skins and mutations move fast. Check voice and trading channels.</p></div>
+    <div class="tile"><div class="icon">🎟️</div><h3>Gamepasses</h3><p>Dark Blade, Notifier and more — discuss in trading before buying or trading.</p></div>
+  </div>
+  <div class="page-head reveal" style="margin-top:2rem">
+    <div class="kicker">Stock</div>
+    <h1>Fruit stock</h1>
+    <p>Normal and Mirage stock rotate on timers. Rare fruits don’t stay up long.</p>
+  </div>
+  <div class="bento reveal">
+    <div class="tile"><div class="icon">🏪</div><h3>Normal stock</h3><p>Dealer restocks on a regular cycle. Mythicals are uncommon — jump when the crew pings.</p></div>
+    <div class="tile"><div class="icon">🏝️</div><h3>Mirage stock</h3><p>Separate pool and timing. Watch announcements and ask in chat when something rare is up.</p></div>
+    <div class="tile wide"><div class="icon">📢</div><h3>Stay in Discord</h3><p>Stock pings, value talk and live offers all happen in the server so you never miss a window.</p></div>
+  </div>
+  <div class="page-head reveal" style="margin-top:2rem">
+    <div class="kicker">In-game event</div>
+    <h1>Halloween event</h1>
+    <p>Trick-or-Treat content is live in Blox Fruits. Ends 15 Nov 2026.</p>
+  </div>
+  <div class="values-box reveal">
+    <h3 style="font-family:var(--display);font-size:1.05rem;margin-bottom:.4rem;color:#e9d5ff">🎃 Halloween / Trick-or-Treat</h3>
+    <p style="color:var(--muted);font-size:.9rem;margin-bottom:1rem">Seasonal event with limited rewards. Countdown to the end:</p>
+    <div class="countdown" id="event-countdown"></div>
+  </div>
+  <div class="cta-band reveal">
+    <h2>Trade with the crew</h2>
+    <p>Values and stock talk live in Discord.</p>
+    <a href="https://discord.gg/jNrBh8EbQ" class="btn btn-main" target="_blank" rel="noopener">Join Discord</a>
+  </div>
+</main>
+<footer>
+  <strong>DARK FRUITS</strong>
+  <div class="foot-links">
+    <a href="index.html">Home</a>
+    <a href="trading.html">Trading</a>
+    <a href="shop.html">Shop</a>
+    <a href="clans.html">Clans</a>
+    <a href="https://discord.gg/jNrBh8EbQ" target="_blank" rel="noopener">Discord</a>
+  </div>
+  <p>Unofficial fan community. Not affiliated with Roblox or Blox Fruits developers.</p>
+  <p>© <span id="year"></span> Dark Fruits</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

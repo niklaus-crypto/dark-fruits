@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events — DARK FRUITS</title>
+  <meta name="description" content="Tournaments and races in Dark Fruits.">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+
+<header class="top">
+  <a href="index.html" class="brand">
+    <img src="dark-fruits-logo.gif" alt="Dark Fruits" width="32" height="32">
+    DARK FRUITS
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="trading.html">Trading</a>
+    <a href="events.html" class="active">Events</a>
+    <a href="giveaways.html">Giveaways</a>
+    <a href="values.html">Values</a>
+    <a href="shop.html">Shop</a>
+    <a href="clans.html">Clans</a>
+    <a href="staff.html">Staff</a>
+    <a href="rules.html">Rules</a>
+    <a href="https://discord.gg/jNrBh8EbQ" class="nav-cta" target="_blank" rel="noopener">Join</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+</header>
+<nav class="drawer" id="drawer">
+  <a href="index.html">Home</a>
+  <a href="trading.html">Trading</a>
+  <a href="events.html">Events</a>
+  <a href="giveaways.html">Giveaways</a>
+  <a href="values.html">Values</a>
+  <a href="shop.html">Shop & DC</a>
+  <a href="clans.html">Clans</a>
+  <a href="staff.html">Staff</a>
+  <a href="rules.html">Rules</a>
+  <a href="https://discord.gg/jNrBh8EbQ" target="_blank" rel="noopener">Join Discord</a>
+</nav>
+<main class="page">
+  <div class="page-head reveal"><div class="kicker">Compete</div><h1>Tournaments & races</h1>
+  <p>Enter PvP tournaments, races and special events. Tickets come from the shop.</p></div>
+  <div class="bento reveal">
+    <div class="tile"><div class="icon">🎫</div><h3>Tournament tickets</h3><p>Buy a tournament ticket in the shop for <strong style="color:#fbbf24">100 DC</strong>. Tickets last one week and can earn 5000 DC + winner role (800 DC/day).</p></div>
+    <div class="tile"><div class="icon">⚔️</div><h3>PvP challenges</h3><p>Fair moderated matches. Brackets and rules are posted in Discord before each event.</p></div>
+    <div class="tile"><div class="icon">🏁</div><h3>Races</h3><p>Speed and skill challenges — climb the board and earn recognition.</p></div>
+    <div class="tile"><div class="icon">✨</div><h3>Special events</h3><p>Seasonal and limited-time events with unique rewards for the crew.</p></div>
+  </div>
+  <div class="page-head reveal" style="margin-top:2rem"><div class="kicker">Countdown</div><h1>Next event window</h1></div>
+  <div class="countdown reveal" id="event-countdown"></div>
+  <div class="cta-band reveal"><h2>Get your ticket</h2><p>Earn DC with daily quests, then buy a ticket in the shop.</p>
+  <a href="shop.html" class="btn btn-ghost">View shop</a>
+  <a href="https://discord.gg/jNrBh8EbQ" class="btn btn-main" target="_blank" rel="noopener">Join Discord</a></div>
+</main>
+<footer>
+  <strong>DARK FRUITS</strong>
+  <div class="foot-links">
+    <a href="index.html">Home</a>
+    <a href="trading.html">Trading</a>
+    <a href="shop.html">Shop</a>
+    <a href="clans.html">Clans</a>
+    <a href="https://discord.gg/jNrBh8EbQ" target="_blank" rel="noopener">Discord</a>
+  </div>
+  <p>Unofficial fan community. Not affiliated with Roblox or Blox Fruits developers.</p>
+  <p>© <span id="year"></span> Dark Fruits</p>
+</footer>
+<script src="app.js"></script>
